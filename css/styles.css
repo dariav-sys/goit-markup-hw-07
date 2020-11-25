@@ -34,6 +34,20 @@ a {
 	margin-right: auto;
 }
 
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.section-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
 /* Logo */
 
 .logo {
@@ -175,7 +189,6 @@ header {
 	max-width: 1440px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	/* outline: 2px solid red; */
 }
 
 .hero-title {
@@ -188,6 +201,7 @@ header {
 	text-transform: uppercase;
 }
 
+/* button  */
 .button.primary {
 	display: inline-flex;
 	align-items: center;
@@ -220,11 +234,17 @@ header {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* feature-list  */
+
+.features {
+	padding-bottom: 0;
+}
+
 .feature-list {
 	display: flex;
 }
 
-.feature-list .title {
+.feature-title {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.2;
@@ -233,7 +253,7 @@ header {
 	/* outline: 1px solid red; */
 }
 
-.feature-list .text {
+.feature-text {
 	width: 270px;
 	font-style: normal;
 	font-weight: normal;
@@ -254,6 +274,10 @@ header {
 	background-position: center;
 }
 
+.feature-item {
+	margin-right: 30px;
+}
+
 .feature-item:nth-child(1)::before {
 	background-image: url(../images/footer-icons/antenna\ 1.svg);
 }
@@ -270,21 +294,27 @@ header {
 	background-image: url(../images/footer-icons/astronaut\ 1.svg);
 }
 
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
+/* create-list  */
 
-.section-picture {
+.create-list {
 	display: flex;
 }
 
-.overlay-card {
+.create-list-picture {
+	width: 370px;
+	margin-right: 30px;
+}
+
+.create-list-picture:last-child {
+	margin-right: 0;
+}
+
+.create-list-card {
 	display: flex;
 	position: relative;
 }
 
-.overlay-text {
+.create-list-text {
 	position: absolute;
 	text-align: center;
 	justify-content: center;
@@ -301,39 +331,10 @@ header {
 	background-color: rgba(47, 48, 58, 0.8);
 }
 
-.item-picture {
-	width: 370px;
-	margin-right: 30px;
-}
+/* our team */
 
-.item-picture:last-child {
-	margin-right: 0;
-}
-
-.feature-item {
-	margin-right: 30px;
-}
-
-.section-picture {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.section-title {
-	text-align: center;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 1.2;
-	margin-top: 0;
-	margin-bottom: 50px;
-}
-
-.section.team {
+.team {
 	background-color: #f5f4fa;
-}
-
-.section.features {
-	padding-bottom: 0;
 }
 
 .team-employees {
@@ -341,14 +342,15 @@ header {
 	text-align: center;
 }
 
-.item-employee {
+.team-employees-item {
 	width: 270px;
 	margin-right: 30px;
 	background-color: #ffffff;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.member-name .member-role {
+.team-employees-name,
+.member-role {
 	font-size: 16px;
 	line-height: 1.2;
 }
@@ -364,8 +366,7 @@ header {
 
 .social-item {
 	margin-right: 10px;
-	margin-bottom: 42px;
-	margin-top: 16px;
+	margin-bottom: 30px;
 }
 
 .social-item:last-child {
