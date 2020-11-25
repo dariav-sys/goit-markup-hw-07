@@ -53,6 +53,7 @@ a {
 header {
 	border-bottom: 1px solid #ececec;
 }
+
 .container.header {
 	display: flex;
 	justify-content: space-between;
@@ -66,10 +67,9 @@ header {
 
 .auth-nav {
 	display: flex;
-	/* align-items: center; */
 }
 
-.auth-nav .item + .item {
+.auth-nav .auth-nav-item + .auth-nav-item {
 	margin-left: 53px;
 }
 
@@ -88,8 +88,8 @@ header {
 	cursor: pointer;
 }
 
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus {
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
 	color: var(--accent-color);
 	cursor: pointer;
 }
@@ -97,15 +97,13 @@ header {
 .site-nav {
 	display: flex;
 	margin-left: 93px;
-
-	/* outline: 1px solid black; */
 }
 
-.site-nav .nav-item + .nav-item {
+.site-nav .site-nav-item + .site-nav-item {
 	margin-left: 53px;
 }
 
-.nav-link {
+.site-nav-link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -118,7 +116,7 @@ header {
 	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current {
+.site-nav-link.current {
 	position: relative;
 	color: var(--accent-color);
 }
@@ -139,7 +137,7 @@ header {
 	align-items: center;
 }
 
-.auth-nav .contact {
+.auth-nav-contact {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.2;
@@ -149,10 +147,10 @@ header {
 	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact:hover svg,
-.contact:hover,
-.contact:focus svg,
-.contact:focus {
+.auth-nav-contact:hover svg,
+.auth-nav-contact:hover,
+.auth-nav-contact:focus svg,
+.auth-nav-contact:focus {
 	fill: var(--accent-color);
 	color: var(--accent-color);
 	cursor: pointer;
