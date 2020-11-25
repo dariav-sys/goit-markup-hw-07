@@ -433,6 +433,7 @@ header {
 }
 
 .footer .text {
+	display: block;
 	color: #ffffff;
 }
 
@@ -654,6 +655,7 @@ footer {
 	font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
+	margin-bottom: 20px;
 }
 
 .sign-up {
@@ -690,10 +692,10 @@ footer {
 }
 
 .container-address {
-	margin-right: 156px;
+	margin-right: 70px;
 }
 
-.contacts p {
+.contacts-text {
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 1.6;
