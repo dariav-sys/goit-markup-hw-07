@@ -39,6 +39,220 @@ a {
   margin-bottom: 50px;
 }
 
+.logo {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-color {
+  color: #212121;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav-item + .site-nav-item {
+  margin-left: 53px;
+}
+
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  position: relative;
+  color: #2196f3;
+}
+
+.underline-element {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav-item + .auth-nav-item {
+  margin-left: 53px;
+}
+
+.auth-nav-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav-contact:hover svg,
+.auth-nav-contact:hover,
+.auth-nav-contact:focus svg,
+.auth-nav-contact:focus {
+  fill: #2196f3;
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.header-mail-icon,
+.header-smartphone-icon {
+  fill: #757575;
+  margin-right: 10px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* footer */
+footer {
+  margin-top: 4px;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer .text {
+  display: block;
+  color: #ffffff;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.address {
+  font-style: inherit;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.address .link {
+  color: #fffff96a;
+  text-decoration: none;
+}
+
+.address a:hover,
+.address a:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-contacts-text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* signup-area */
+.signup-area {
+  display: flex;
+}
+
+.signup-input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  color: #ffffff;
+  outline: none;
+}
+
+.signup-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.join-us {
+  display: block;
+  align-items: center;
+  width: 206px;
+}
+
+.join-us p,
+.signup-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  margin-left: 93px;
+}
+
+.signup-text {
+  margin-bottom: 20px;
+}
+
 /* Hero */
 .hero {
   color: #ffffff;
@@ -267,47 +481,6 @@ a {
   border: 1px solid #2196f3;
   fill: #2196f3;
   cursor: pointer;
-}
-
-/* portfolio buttons */
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.buttons .item {
-  margin-right: 8px;
-}
-
-.buttons .item:last-child {
-  margin-right: 0;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.portfolio-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-button {
-  padding: 6px 22px;
-}
-
-.portfolio-button:last-child {
-  margin-right: 0;
 }
 
 .team-socials {
