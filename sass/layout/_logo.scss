@@ -1,5 +1,5 @@
 .logo {
-	color: var(--accent-color);
+	color: $accent-color;
 	font-family: "Raleway", sans-serif;
 	font-weight: bold;
 	font-size: 26px;
@@ -8,5 +8,5 @@
 }
 
 .logo-color {
-	color: var(--primary-black-color);
+	color: $primary-black-color;
 }

@@ -1,18 +1,15 @@
+@import "./base/variables";
+
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
-@import "./base/variables";
 
-@import "./layout/logo";
-@import "./layout/header";
 @import "./layout/hero";
 @import "./layout/killer-features";
 @import "./layout/we-create-list";
 @import "./layout/our-team";
 @import "./layout/partners";
 @import "./layout/portfolio-buttons";
-@import "./layout/project-list_portfolio";
-@import "./layout/footer";
 
 @import "./components/teams-socials";
 @import "./components/primary-button";

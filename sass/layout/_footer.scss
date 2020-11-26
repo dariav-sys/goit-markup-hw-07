@@ -2,7 +2,7 @@
 
 footer {
 	margin-top: 4px;
-	background-color: var(--secondary-background-color);
+	background-color: $secondary-background-color;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
@@ -33,7 +33,7 @@ footer {
 }
 .address a:hover,
 .address a:focus {
-	color: var(--accent-color);
+	color: $accent-color;
 	cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ footer {
 .signup-input {
 	width: 358px;
 	height: 50px;
-	background-color: var(--secondary-background-color);
+	background-color: $secondary-background-color;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	padding-left: 16px;

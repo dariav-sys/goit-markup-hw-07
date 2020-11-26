@@ -42,7 +42,7 @@
 }
 
 .modal-close-btn:hover {
-	fill: var(--accent-color);
+	fill: $accent-color;
 }
 
 .is-hidden {
@@ -59,7 +59,7 @@ textarea {
 
 .checkbox-conditions {
 	text-decoration: underline;
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .form-header-text {
@@ -88,7 +88,7 @@ textarea {
 	font-size: 12px;
 	line-height: 1.2;
 	letter-spacing: 0.01em;
-	color: var(--secondary-grey-color);
+	color: $secondary-grey-color;
 	margin-bottom: 4px;
 }
 
@@ -105,12 +105,12 @@ textarea {
 
 .input:hover,
 .input:focus {
-	border-color: var(--accent-color);
+	border-color: $accent-color;
 }
 
 .input:hover ~ svg,
 .input:focus ~ svg {
-	fill: var(--accent-color);
+	fill: $accent-color;
 }
 
 .input-pic {
@@ -139,7 +139,7 @@ textarea {
 
 .comment:hover,
 .comment:focus {
-	border: 1px solid var(--accent-color);
+	border: 1px solid $accent-color;
 }
 
 .button-form {
@@ -180,7 +180,7 @@ textarea {
 }
 
 .checkbox:checked + .checkbox-label::before {
-	border-color: var(--accent-color);
+	border-color: $accent-color;
 	background-image: url("../images/footer-icons/icon-check.svg");
 	background-origin: border-box;
 }
@@ -190,6 +190,6 @@ textarea {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.45;
-	color: var(--secondary-grey-color);
+	color: $secondary-grey-color;
 	margin-left: 8px;
 }

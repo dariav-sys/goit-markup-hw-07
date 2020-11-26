@@ -27,7 +27,7 @@
 
 .partner-link:hover,
 .partner-link:focus {
-	border: 1px solid var(--accent-color);
-	fill: var(--accent-color);
+	border: 1px solid $accent-color;
+	fill: $accent-color;
 	cursor: pointer;
 }

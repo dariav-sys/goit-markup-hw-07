@@ -21,7 +21,7 @@
 }
 
 .member-role {
-	color: var(--secondary-grey-color);
+	color: $secondary-grey-color;
 }
 
 // team socials
@@ -58,7 +58,7 @@
 
 .social-link:hover,
 .social-link:focus {
-	background-color: var(--accent-color);
+	background-color: $accent-color;
 	fill: #ffffff;
 	cursor: pointer;
 }
@@ -76,6 +76,6 @@
 
 .social-link.footer:hover,
 .social-link.footer:focus {
-	background-color: var(--accent-color);
+	background-color: $accent-color;
 	cursor: pointer;
 }

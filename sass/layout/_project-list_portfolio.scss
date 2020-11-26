@@ -4,7 +4,7 @@
 .project-title,
 .project-subtitle {
 	text-decoration: none;
-	color: var(--primary-black-color);
+	color: $primary-black-color;
 }
 
 .project-list {
@@ -62,7 +62,7 @@
 	font-size: 18px;
 	line-height: 2;
 	margin: 0;
-	color: var(--secondary-grey-color);
+	color: $secondary-grey-color;
 	font-size: 16px;
 	line-height: 1.88;
 	margin: 0;
