@@ -12,37 +12,37 @@
 	align-items: center;
 }
 
-.site-nav .site-nav-link:hover,
-.site-nav .site-nav-link:focus {
-	color: $accent-color;
-	cursor: pointer;
-}
-
 .site-nav {
 	display: flex;
 	margin-left: 93px;
-}
 
-.site-nav-item + .site-nav-item {
-	margin-left: 53px;
-}
+	&-item + &-item {
+		margin-left: 53px;
+	}
 
-.site-nav-link {
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	color: $primary-black-color;
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+	&-link {
+		display: block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		color: $primary-black-color;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.current {
-	position: relative;
-	color: $accent-color;
+		& .site-nav-link:hover,
+		& .site-nav-link:focus {
+			color: $accent-color;
+			cursor: pointer;
+		}
+
+		&.current {
+			position: relative;
+			color: $accent-color;
+		}
+	}
 }
 
 .underline-element {
@@ -58,31 +58,31 @@
 
 .auth-nav {
 	display: flex;
-}
 
-.auth-nav-item + .auth-nav-item {
-	margin-left: 53px;
-}
+	&-contact {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: $secondary-grey-color;
+		text-decoration: none;
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.auth-nav-contact {
-	display: flex;
-	align-items: center;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-	color: $secondary-grey-color;
-	text-decoration: none;
-	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+		&:hover svg,
+		&:hover,
+		&:focus svg,
+		&:focus {
+			fill: $accent-color;
+			color: $accent-color;
+			cursor: pointer;
+		}
+	}
 
-.auth-nav-contact:hover svg,
-.auth-nav-contact:hover,
-.auth-nav-contact:focus svg,
-.auth-nav-contact:focus {
-	fill: $accent-color;
-	color: $accent-color;
-	cursor: pointer;
+	&-item + &-item {
+		margin-left: 53px;
+	}
 }
 
 .header-mail-icon,

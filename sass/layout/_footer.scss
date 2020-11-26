@@ -1,68 +1,43 @@
 /* footer */
 
-footer {
-	margin-top: 4px;
-	background-color: $secondary-background-color;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
+.footer {
+	& .text {
+		display: block;
+		color: #ffffff;
+	}
 
-.container.footer {
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-}
+	&-address {
+		margin-right: 70px;
+	}
 
-.footer .text {
-	display: block;
-	color: #ffffff;
-}
+	&-contacts-text {
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 1.6;
+		margin-bottom: 9px;
+		margin-top: 20px;
 
-.logo-footer {
-	color: #ffffff;
-}
+		&-item:not(:last-child) {
+			margin-top: 0;
+			margin-bottom: 9px;
+		}
+	}
 
-.address {
-	font-style: inherit;
-	font-size: 14px;
-	line-height: 1.8;
-}
-.address .link {
-	color: #fffff96a;
-	text-decoration: none;
-}
-.address a:hover,
-.address a:focus {
-	color: $accent-color;
-	cursor: pointer;
-}
-
-.footer-address {
-	margin-right: 70px;
-}
-
-.footer-contacts-text {
-	color: #ffffff;
-	font-size: 14px;
-	line-height: 1.6;
-	margin-bottom: 9px;
-	margin-top: 20px;
-}
-
-.footer-contacts-item:not(:last-child) {
-	margin-top: 0;
-	margin-bottom: 9px;
-}
-.footer-link {
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 14px;
-	line-height: 1.6;
+	&-link {
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 14px;
+		line-height: 1.6;
+	}
 }
 
 /* signup-area */
 
-.signup-area {
-	display: flex;
+.sign-up {
+	margin-left: 93px;
+
+	&-area {
+		display: flex;
+	}
 }
 
 .signup-input {
@@ -74,13 +49,13 @@ footer {
 	padding-left: 16px;
 	color: #ffffff;
 	outline: none;
-}
 
-.signup-input::placeholder {
-	color: rgba(255, 255, 255, 0.6);
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 1.25;
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 1.25;
+	}
 }
 
 .join-us {
@@ -89,7 +64,11 @@ footer {
 	width: 206px;
 }
 
-.join-us p,
+.signup-text {
+	margin-bottom: 20px;
+}
+
+.join-us-text,
 .signup-text {
 	color: #ffffff;
 	text-transform: uppercase;
@@ -97,13 +76,5 @@ footer {
 	font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
-	margin-bottom: 20px;
-}
-
-.sign-up {
-	margin-left: 93px;
-}
-
-.signup-text {
 	margin-bottom: 20px;
 }
